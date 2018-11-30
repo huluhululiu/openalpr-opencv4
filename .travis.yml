@@ -3,7 +3,8 @@ dist: xenial
 before_install:
   - sudo add-apt-repository ppa:timsc/opencv-3.4 -y
   - sudo apt-get update -q
-  - sudo apt-get install libopencv-dev libtesseract-dev git cmake build-essential libleptonica-dev liblog4cplus-dev libcurl3-dev beanstalkd -y
+
+install: sudo apt-get -y install libopencv-dev libtesseract-dev git cmake build-essential libleptonica-dev liblog4cplus-dev libcurl3-dev beanstalkd
 
 before_script:
   - mkdir -p ./src/build/
