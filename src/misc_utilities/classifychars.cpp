@@ -146,7 +146,7 @@ int main( int argc, const char** argv )
         imshow ("Original", frame);
 
 	PipelineData pipeline_data(frame, Rect(0, 0, frame.cols, frame.rows), &config);
-	cvtColor(frame, frame, CV_BGR2GRAY);
+	cvtColor(frame, frame, cv::COLOR_BGR2GRAY);
 	pipeline_data.crop_gray = Mat(frame, Rect(0, 0, frame.cols, frame.rows));
     pipeline_data.thresholds = produceThresholds(pipeline_data.crop_gray, &config);
     
@@ -344,7 +344,7 @@ vector<string> showCharSelection(Mat image, vector<Rect> charRegions, string sta
   {
     Mat imgCopy(image.size(), image.type());
     image.copyTo(imgCopy);
-    cvtColor(imgCopy, imgCopy, CV_GRAY2BGR);
+    cvtColor(imgCopy, imgCopy, cv::COLOR_GRAY2BGR);
 
     rectangle(imgCopy, charRegions[curCharIdx], Scalar(0, 255, 0), 1);
 
