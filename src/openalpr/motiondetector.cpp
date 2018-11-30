@@ -7,7 +7,6 @@ namespace alpr
   
 MotionDetector::MotionDetector()
 {
-	// OpenCV 3
 	pMOG2 = createBackgroundSubtractorMOG2();
 }
 
@@ -18,7 +17,6 @@ MotionDetector::~MotionDetector()
 
 void MotionDetector::ResetMotionDetection(cv::Mat* frame)
 {
-	// OpenCV 3
 	pMOG2->apply(*frame, fgMaskMOG2, 1);
 }
 
@@ -32,8 +30,6 @@ cv::Rect MotionDetector::MotionDetect(cv::Mat* frame)
 	cv::Rect largest_rect, rect_temp;
 
 	// Detect motion
-
-	// OpenCV 3
 	pMOG2->apply(*frame, fgMaskMOG2);
 
 	//Remove noise
