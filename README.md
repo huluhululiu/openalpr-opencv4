@@ -1,4 +1,4 @@
-Updated for OpenCV 4, not compatible with OpenCV 2 anymore
+Updated for OpenCV 4, dropped the support for OpenCV 2
 
 
 
