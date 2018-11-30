@@ -381,7 +381,7 @@ namespace alpr
 
       Mat imgBestBoxes(img.size(), img.type());
       img.copyTo(imgBestBoxes);
-      cvtColor(imgBestBoxes, imgBestBoxes, CV_GRAY2BGR);
+      cvtColor(imgBestBoxes, imgBestBoxes, cv::COLOR_GRAY2BGR);
       for (unsigned int i = 0; i < bestBoxes.size(); i++)
         rectangle(imgBestBoxes, bestBoxes[i], Scalar(0, 255, 0));
 
@@ -549,7 +549,7 @@ namespace alpr
       //morphologyEx(thresholds[i], tempImg, MORPH_CLOSE, element);
       //drawAndWait(&tempImg);
 
-      findContours(tempImg, contours, RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE);
+      findContours(tempImg, contours, RETR_EXTERNAL, CV::CHAIN_APPROX_SIMPLE);
 
       for (unsigned int j = 0; j < charRegions.size(); j++)
       {
