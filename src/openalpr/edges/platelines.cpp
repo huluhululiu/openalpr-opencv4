@@ -220,7 +220,7 @@ namespace alpr
   Mat PlateLines::customGrayscaleConversion(Mat src)
   {
     Mat img_hsv;
-    cvtColor(src,img_hsv,CV_BGR2HSV);
+    cvtColor(src,img_hsv, cv::COLOR_BGR2HSV);
 
     Mat grayscale = Mat(img_hsv.size(), CV_8U );
     Mat hue(img_hsv.size(), CV_8U );
