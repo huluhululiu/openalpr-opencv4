@@ -401,7 +401,7 @@ int main(int argc, char** argv) {
   
   drawImage(imgOriginal);
 
-  while (cvGetWindowHandle(WINDOW_NAME.c_str()) != 0)
+  while (cv::getWindowProperty(WINDOW_NAME.c_str(), WND_PROP_AUTOSIZE) >= 0)
   {
 
     char c = waitKey(15);
@@ -417,7 +417,7 @@ int main(int argc, char** argv) {
 
   }
 
-  cvDestroyAllWindows();
+  destroyAllWindows();
   
   
   return 0;
