@@ -1,3 +1,7 @@
+Updated for OpenCV 4
+
+
+
 openalpr
 ========
 
@@ -115,7 +119,7 @@ OpenALPR is written in C++ and has bindings in C#, Python, Node.js, Go, and Java
 Compiling
 -----------
 
-[![Build Status](https://travis-ci.org/openalpr/openalpr.svg?branch=master)](https://travis-ci.org/openalpr/openalpr)
+[![Build Status](https://travis-ci.org/sunfic/openalpr.svg?branch=master)](https://travis-ci.org/sunfic/openalpr)
 
 OpenALPR compiles and runs on Linux, Mac OSX and Windows.
 
