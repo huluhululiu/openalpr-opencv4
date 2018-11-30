@@ -20,13 +20,10 @@
 #include "detectorocl.h"
 #include <support/tinythread.h>
 
-#if OPENCV_MAJOR_VERSION == 3
-
 using namespace cv;
 using namespace std;
 
 tthread::mutex ocl_detector_mutex_m;
-
 
 namespace alpr
 {
@@ -146,5 +143,3 @@ namespace alpr
   }
 
 }
-
-#endif
