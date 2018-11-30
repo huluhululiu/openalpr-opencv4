@@ -167,7 +167,7 @@ namespace alpr
         drawContours(mask, tempvec,
                      0, // draw this contour
                      cv::Scalar(255,255,255), // in
-                     CV_FILLED,
+                     cv::FILLED,
                      8,
                      contours[winningIndex].hierarchy,
                      0
