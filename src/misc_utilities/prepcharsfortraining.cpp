@@ -198,7 +198,7 @@ int main( int argc, const char** argv )
 
       //cout << "Cropped: " << cropRect.x << ":" << cropRect.y << " -- " << cropRect.width << ":" << cropRect.height << endl;
       Mat cropped(characterImg, cropRect);
-      cvtColor(cropped, cropped, CV_BGR2GRAY);
+      cvtColor(cropped, cropped, cv::COLOR_BGR2GRAY);
 
       Rect destinationRect(xPos, yPos, tallestRect.width, tallestRect.height);
       //cout << "1" << endl;
