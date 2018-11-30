@@ -311,7 +311,7 @@ void showDashboard(vector<Mat> images, vector<bool> selectedImages, int selected
   {
     Mat imgCopy(images[i].size(), images[i].type());
     images[i].copyTo(imgCopy);
-    cvtColor(imgCopy, imgCopy, CV_GRAY2BGR);
+    cvtColor(imgCopy, imgCopy, cv::COLOR_GRAY2BGR);
     if (i == selectedIndex)
     {
       rectangle(imgCopy, Point(1,1), Point(imgCopy.size().width - 1, imgCopy.size().height -1), Scalar(0, 255, 0), 1);
