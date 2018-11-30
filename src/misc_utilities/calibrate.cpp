@@ -230,7 +230,7 @@ void initialize_variables()
 
 void create_window()
 {
-  namedWindow(WINDOW_NAME, cv::WINDOW_AUTOSIZE | cv::WINDOW_KEEPRATIO | cv::GUI_EXPANDED);
+  namedWindow(WINDOW_NAME, cv::WINDOW_AUTOSIZE | cv::WINDOW_KEEPRATIO | cv::CV_GUI_EXPANDED);
   
   value = round(-(rotationx * 20000.0) + 100);
   createTrackbar( "X", WINDOW_NAME, &value, 200,  XChange);
