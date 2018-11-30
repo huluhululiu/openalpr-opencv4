@@ -22,8 +22,6 @@
 
 #include <vector>
 
-#if OPENCV_MAJOR_VERSION == 3
-
 #include "opencv2/objdetect/objdetect.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/core/core.hpp"
@@ -49,8 +47,6 @@ namespace alpr
   };
 
 }
-
-#endif
 
 #endif	/* OPENALPR_DETECTOROPENCL_H */
 
