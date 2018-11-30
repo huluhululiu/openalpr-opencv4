@@ -1,3 +1,5 @@
+dist: xenial
+
 before_install:
   - sudo add-apt-repository ppa:timsc/opencv-3.4 -y  
   - sudo apt-get update -q
