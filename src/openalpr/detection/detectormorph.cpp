@@ -58,7 +58,7 @@ namespace alpr {
     
     Mat img_open, img_result;
     Mat element = getStructuringElement(MORPH_RECT, Size(30, 4));
-    morphologyEx(frame_gray, img_open, cv::MOP_OPEN, element, cv::Point(-1, -1));
+    morphologyEx(frame_gray, img_open, cv::MORPH_OPEN, element, cv::Point(-1, -1));
 
     img_result = frame_gray - img_open;
 
@@ -89,9 +89,9 @@ namespace alpr {
       diamond.at<uchar>(0, 3) = 0;
       diamond.at<uchar>(1, 4) = 0;
 
-    morphologyEx(img_threshold, img_open2, cv::MOP_OPEN, diamond, cv::Point(-1, -1));
+    morphologyEx(img_threshold, img_open2, cv::MORPH_OPEN, diamond, cv::Point(-1, -1));
     Mat rectElement = getStructuringElement(cv::MORPH_RECT, Size(13, 4));
-    morphologyEx(img_open2, img_threshold, cv::MOP_CLOSE, rectElement, cv::Point(-1, -1));
+    morphologyEx(img_open2, img_threshold, cv::MORPH_CLOSE, rectElement, cv::Point(-1, -1));
 
     if (config->debugDetector && config->debugShowImages) {
       imshow("Close", img_threshold);
