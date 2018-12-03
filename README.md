@@ -18,12 +18,13 @@ Installation:
 
 
 ### Build with OpenCV 4:
-1. Should working fine with Ubuntu 18.04
+1. For Ubuntu 18.04
+   - Downgrade `libtesseract4` to `libtesseract3`
 2. For Ubuntu 16.04 
    - update `liblog4cplus` compiled with C++11
    - pass `-std=c++11` to `CMAKE_CXX_FLAGS`
    
-```cmake -DCMAKE_CXX_FLAGS=-std=c++11 ..```
+    ```cmake -DCMAKE_CXX_FLAGS=-std=c++11 ..```
 
 License
 -------
