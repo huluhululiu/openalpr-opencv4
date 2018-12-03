@@ -24,7 +24,7 @@ Installation:
    - update `liblog4cplus` compiled with C++11
    - pass `-std=c++11` to `CMAKE_CXX_FLAGS`
    
-    ```cmake -DCMAKE_CXX_FLAGS=-std=c++11 ..```
+        ```cmake -DCMAKE_CXX_FLAGS=-std=c++11 ..```
 
 License
 -------
