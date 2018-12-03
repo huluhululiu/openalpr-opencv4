@@ -5,7 +5,9 @@ OpenALPR with OpenCV 4 support
 Updated support for OpenCV 3.x and 4.x, dropped the support for OpenCV 2.x
 
 Installation: 
-
+-------
+    sudo apt-get update
+    sudo install -y libopencv-dev libtesseract-dev git cmake build-essential libleptonica-dev liblog4cplus-dev libcurl3-dev beanstalkd
     git clone https://github.com/sunfic/openalpr
     cd openalpr/src
     mkdir build
@@ -14,12 +16,13 @@ Installation:
     make
     sudo make install
 
-If you encounter error `OpenCV 4.x+ requires enabled C++11 support`, pass `-std=c++11` to `CMAKE_CXX_FLAGS`
 
-    cmake -DCMAKE_CXX_FLAGS=-std=c++11 ..
-
-Installation and usage please refer to: 
-https://github.com/openalpr/openalpr
+### Build with OpenCV 4:
+1. Should working fine with Ubuntu 18.04
+2. For Ubuntu 16.04 
+   - update `liblog4cplus` compiled with C++11
+   - pass `-std=c++11` to `CMAKE_CXX_FLAGS`
+```cmake -DCMAKE_CXX_FLAGS=-std=c++11 ..```
 
 License
 -------
