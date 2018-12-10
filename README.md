@@ -1,6 +1,6 @@
 OpenALPR with OpenCV 4 support
 
-[![Build Status](https://travis-ci.org/sunfic/openalpr.svg?branch=master)](https://travis-ci.org/sunfic/openalpr)
+[![Build Status](https://travis-ci.org/sunfic/openalpr-opencv4.svg?branch=master)](https://travis-ci.org/sunfic/openalpr-opencv4)
 
 Updated support for OpenCV 3.x and 4.x, dropped the support for OpenCV 2.x
 
