@@ -85,7 +85,7 @@ namespace alpr
     if (detector_mask.mask_loaded && config->debugDetector)
     {
       frame_gray.copyTo(mask_debug_img);
-      cvtColor(frame_gray, mask_debug_img, cv::COLOR_BGR2GRAY);
+      cvtColor(frame_gray, mask_debug_img, cv::COLOR_GRAY2BGR);
     }
     
     vector<PlateRegion> detectedRegions;   
