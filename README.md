@@ -9,6 +9,7 @@ Note:
 Since OpenCV 4, it drops the support of NVIDIA CUDA, if you plan to use CUDA acceleration, you may want to stay with OpenCV 3.x branch rather than OpenCV 4.x
 
 More reading:
+
 https://answers.opencv.org/question/205087/how-to-use-cascadeclassifiercreate-in-opencv-40/
 https://answers.opencv.org/question/200431/whats-the-future-of-cuda-modules-after-opencv-4/
 
