@@ -35,9 +35,11 @@ Installation:
    
         ```cmake -DCMAKE_CXX_FLAGS=-std=c++11 ..```
 
-TO-DO: 
+
+TO-DO list: 
 -------
-Integrated with opencv4 contrib for CUDA supports.
+Integrate with opencv4 contrib for CUDA supports.
+Integrate with libtesseract4.
 
 
 License
