@@ -38,8 +38,8 @@ Installation:
 
 TO-DO list: 
 -------
-Integrate with opencv4 contrib for CUDA supports.
-Integrate with libtesseract4.
+1. Integrate with opencv4 contrib for CUDA supports.
+2. Integrate with libtesseract4.
 
 
 License
