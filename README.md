@@ -6,7 +6,7 @@ Updated support for OpenCV 3.x and 4.x, dropped the support for OpenCV 2.x
 
 Note: 
 ------
-Since OpenCV 4, it drops the support of NVIDIA CUDA, if you plan to use CUDA acceleration, you may want to stay with OpenCV 3.x branch rather than OpenCV 4.x
+Since OpenCV 4, it moves NVIDIA CUDA into contrib repos(https://github.com/opencv/opencv_contrib). If you plan to use CUDA acceleration, you may want to stay with OpenCV 3.x branch rather than OpenCV 4.x.
 
 More reading:
 
@@ -34,6 +34,11 @@ Installation:
    - pass `-std=c++11` to `CMAKE_CXX_FLAGS`
    
         ```cmake -DCMAKE_CXX_FLAGS=-std=c++11 ..```
+
+TO-DO: 
+-------
+Integrated with opencv4 contrib for CUDA supports.
+
 
 License
 -------
