@@ -16,7 +16,7 @@ https://answers.opencv.org/question/200431/whats-the-future-of-cuda-modules-afte
 Installation: 
 -------
     sudo apt-get update
-    sudo install -y libopencv-dev libtesseract-dev git cmake build-essential libleptonica-dev liblog4cplus-dev libcurl3-dev beanstalkd
+    sudo apt-get install -y libopencv-dev libtesseract-dev git cmake build-essential libleptonica-dev liblog4cplus-dev libcurl3-dev beanstalkd
     git clone https://github.com/sunfic/openalpr-opencv4
     cd openalpr-opencv4/src
     mkdir build
